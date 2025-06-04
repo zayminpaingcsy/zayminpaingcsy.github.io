@@ -1,41 +1,129 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Animations Created By Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 7 ICT Revision Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1, h2, h3 {
+      color: #2E8B57;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
-<h1 align=center>Animations By Me</h1>
-<table align=center border=1 cellspacing=0 cellpadding=5>
-<caption>Here are the animations I created using macromedia flash 8.</caption>
-<tr>
-<th>No.</th>
-<th>Name of the animation</th>
-<th>Link to the animation</th>
-</tr>
-<tr>
-<td>1</td>
-<td>Car moving on the road</td>
-<td><a href="carmovingonroad.html">Click here to see the car moving on the road</a></td>
-</tr>
-<tr>
-<td>2</td>
-<td>From day to night</td>
-<td><a href="fromdaytonight.html">Click here to see the transformation from day to night</a></td>
-</tr>
-<tr>
-<td>3</td>
-<td>The light shop</td>
-<td><a href="lightshop.html">Click here to see the light shop</a></td>
-</tr>
-<tr>
-<td>4</td>
-<td>The rocket launch</td>
-<td><a href="rocketlaunch.html">Click here to see the rocket launch</a></td>
-</tr>
-<tr>
-<td>5</td>
-<td>A sunny day cartoon</td>
-<td><a href="sunnyday.html">Click here to see a sunny day cartoon</a></td>
-</tr>
-</table>
+  <h1>Year 7 ICT Revision Notes</h1>
+
+  <h2>Elementary HTML</h2>
+  <h3>Creating Lists</h3>
+  <ul>
+    <li><b>Unordered List:</b> A list with bullets.
+      <pre>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </li>
+    <li><b>Ordered List:</b> A list with numbers.
+      <pre>&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</pre>
+    </li>
+    <li><b>Description List:</b>
+      <pre>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+    </li>
+    <li><b>Nested List:</b>
+      <pre>&lt;ul&gt;
+  &lt;li&gt;Fruit
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+    </li>
+  </ul>
+
+  <h3>HTML Table Tags</h3>
+  <p>Use tables to organize data.</p>
+  <pre>
+&lt;table&gt;
+  &lt;caption&gt;Student Marks&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="2"&gt;Name&lt;/th&gt;
+    &lt;th colspan="2"&gt;Subjects&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Math&lt;/th&gt;
+    &lt;th&gt;Science&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;90&lt;/td&gt;
+    &lt;td&gt;95&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+  <h3>Formatting Text</h3>
+  <p>Use the <code>&lt;font&gt;</code> tag for text formatting (not recommended in HTML5).</p>
+  <pre>
+&lt;font color="green" size="4" face="Verdana"&gt;Hello, World!&lt;/font&gt;</pre>
+
+  <h3>Setting Page Margins</h3>
+  <pre>
+&lt;style&gt;
+  body {
+    margin: 40px;
+  }
+&lt;/style&gt;</pre>
+
+  <h2>Creating Forms in HTML</h2>
+  <pre>
+&lt;form&gt;
+  Name: &lt;input type="text" name="username"&gt;&lt;br&gt;
+  Message: &lt;textarea name="message"&gt;&lt;/textarea&gt;&lt;br&gt;
+  Gender:
+  &lt;select name="gender"&gt;
+    &lt;option value="male"&gt;Male&lt;/option&gt;
+    &lt;option value="female"&gt;Female&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/form&gt;</pre>
+
+  <h2>Tweening and Publishing (Flash)</h2>
+  <ul>
+    <li><b>Motion Tweening:</b> Moves an object smoothly from one position to another.</li>
+    <li><b>Shape Tweening:</b> Morphs one shape into another.</li>
+    <li><b>Scenes:</b> Break your animation into parts.</li>
+    <li><b>Publishing:</b> Export as .swf or .html for viewing.</li>
+    <li><b>Embed Flash:</b>
+      <pre>&lt;embed src="animation.swf" width="550" height="400"&gt;</pre>
+    </li>
+  </ul>
+
+  <h2>World Wide Web</h2>
+  <ul>
+    <li><b>Protocols:</b> HTTP, HTTPS, FTP.</li>
+    <li><b>Components:</b> Web browsers, web servers, URLs.</li>
+    <li><b>Web Hosting:</b> Providing space on a server for websites.</li>
+  </ul>
 </body>
 </html>
